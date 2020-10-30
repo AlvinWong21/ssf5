@@ -1,0 +1,21 @@
+{{!-- <h2>Your search results:</h2> --}}
+<div class="container container-width container-fluid mt-3">
+
+    {{#each searchResults}}
+
+    <div class="container">
+
+        <h4>{{this.title}}</h4>
+        <img class="img-fluid" src="{{this.img}}" alt="Image Unavailable">
+        <p>{{this.description}}</p>
+
+        <div class="d-flex justify-content-between">
+            <p id="publishedAt">{{this.publishedAt}}</p>
+            <a href="{{this.artUrl}}">Read</a>
+        </div>
+
+    </div>
+
+    {{/each}}
+
+</div>
